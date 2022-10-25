@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* colors */
+    --light-green:#96b1a8;
+    --dark: #21333e;
+    --bg: #fff6d6;
+    --green: #93cfbf;
+
+    /* Fonts */
+    --heading: "playfair Display";
+    --text: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: var(--text);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark);
+}
+a:hover{
+    color: var(--light-green) !important;
+}
+span{
+    color: var(--green);
+}
+.section-subtitle{
+    color: var(--green);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+}
+.section-title{
+    color: var(--dark);
+    font-family: var(--heading);
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.section-desc{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: gray;
+}
+.btn-green{
+    background-color: var(--green);
+    padding: 10px 25px;
+    border-radius: 8px;
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 600;
+    transition: .4s ease-in;
+}
+.btn-green:hover{
+    background-color: var(--light-green);
+    color: var(--dark)!important;
+}
+
+.header-dark{
+    background-color: var(--dark);
+}
+
+
+/* custom css */
+
+/* main header css */
+.nav-item a{
+    color: white;
+    margin-left: 30px;
+}
+.navbar-nav .nav-link.active{
+    color: var(--light-green)
+}
+
+.header-dark{
+    background-color: var(--dark) !important;
+}
+
+/* hero section */
+.hero{
+    background: url(../Images/bg-img/bg-green.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0 0;
+    margin-top:-80px
+}
+.hero img{
+    max-width: 300px;
+}
+.hero-subtitle{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+}
+.hero-title{
+    font-family: var(--heading);
+    color: white;
+    font-weight: 800;
+    font-size: 70px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.hero-desc{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+/* about */
+#about{
+    padding: 100px 0;
+}
+#about img{
+    max-width: 60%;
+}
+
+/* our approach */
+#approach{
+    padding: 100px 0;
+    background-color:var(--bg);
+}
+.card{
+    padding: 20px;
+    border-radius: 8px;
+    border:none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: whitesmoke;
+    margin-top: 50px;
+}
+.card img{
+    margin-top: -50px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+.card-title{
+    font-family: var(--heading);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--green);
+    margin-bottom: 20px;
+}
+.card-desc{
+    font-weight: 500;
+    color: gray;
+}
+.learn-more{
+    color: var(--green);
+    padding: 20px 0;
+}
+.learn-more i{
+    margin-left: 10px;
+}
+
+/* blog */
+#blog{
+    padding: 100px 0;    
+}
+.blog-card{
+    background-color: var(--bg);
+    border-radius: 8px !important;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+#blog img{
+    border-radius: 8px;  
+}
+.blog-date{
+    color: var(--green);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.blog-title{
+    font-size: 58px;
+    font-weight: 800;
+    font-family: var(--heading);
+}
+.blog-desc{
+    color: gray;
+}
+.blog-left{
+    padding-right: 50px;
+    padding: 40px;
+}
+.swiper-pagination{
+    margin-top: 50px;
+}
+.swiper-pagination-bullet{
+    background-color: var(--green);
+}
+
+/* contact */
+#contact{
+    padding:100px 0;
+    background-color: var(--bg);
+}
+.section-head{
+    margin-bottom: 50px;
+}
+#contact a{
+    font-size: 18px;
+}
+#contact a i{
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border:none;
+    padding: 10px;
+}
+button{
+    width: 30%;
+    border-radius: 8px;
+    border:none;
+    padding: 10px 20px;
+    background-color: var(--green);
+}
+
+/* Footer */
+#footer{
+    padding: 40px !important;
+    background-color: var(--dark);
+    color: white;
+}
+#footer p{
+    margin-bottom: 0;
+}
+#footer i{
+    color: white;
+    margin-left: 30px;
+    font-size: 20px;
+}

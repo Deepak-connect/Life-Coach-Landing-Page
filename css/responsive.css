@@ -1,0 +1,53 @@
+
+@media(max-width:1300px){
+    .hero-subtitle{
+        font-size: 16px;
+    }
+    .hero-title{
+        font-size: 60px;
+    }
+    .hero-desc{
+        font-size: 16px;
+    }
+
+    .blog-title{
+        font-size: 38px;
+    }
+
+}
+
+@media(max-width:991px){
+    .navbar-toggler{
+        color: white;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .navbar-collapse{
+        background: white;
+    }
+    .nav-item a{
+        color: var(--dark);
+    }
+    .hero{
+        padding-top: 200px;
+    }
+    #about .row{
+        flex-direction: column-reverse;
+    }
+    #about img{
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:767px){
+    #contact form{
+        margin-top: 50px;
+    }
+    #contact button{
+        width: 40%;
+    }
+    #footer p{
+        margin-bottom: 30px;
+    }
+}
